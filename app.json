@@ -1,0 +1,50 @@
+{
+  "注释": "tab分页栏，可以快速定位到某个页面，居底或局顶。当设置position为top，将不显示icon，tarBar中的list是一个数组，只能配置最少2个，最多5个tab，tab按数组的顺序排序",
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/weclome/weclome"
+  ],
+  "window": {
+    "注释": "页面上拉触底事件触发时距页面底部距离，单位px，未测试",
+    "navigationBarBackgroundColor": "#ccc",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "微信小程序学习",
+    "navigationStyle": "default",
+    "backgroundColor": "#000",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true,
+    "backgroundColorTop": "#fff",
+    "backgroundColorBottom": "#000",
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "注释": "tab列表",
+    "color": "red",
+    "selectedColor": "#000",
+    "backgroundColor": "#ccc",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "注释": "选中时的图片路径",
+        "pagePath": "pages/index/index",
+        "text": "音乐",
+        "iconPath": "images/tab/music1.png",
+        "selectedIconPath": "images/tab/music.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "视频",
+        "iconPath": "images/tab/video1.png",
+        "selectedIconPath": "images/tab/video.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "影评",
+        "iconPath": "images/tab/review1.png",
+        "selectedIconPath": "images/tab/review.png"
+      }
+    ]
+  }
+}
